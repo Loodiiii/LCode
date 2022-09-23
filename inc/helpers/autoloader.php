@@ -5,7 +5,7 @@
  * @package LCode
  */
 
-namespace LCode\Inc\Helpers;
+namespace LCode_Theme\Inc\Helpers;
 
 /**
  * Auto loader function.
