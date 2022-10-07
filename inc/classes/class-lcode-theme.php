@@ -43,6 +43,15 @@ class LCode_THEME {
             'flex-width'           => true,
             'unlink-homepage-logo' => false,
         ] );
+
+        add_theme_support( 'custom-background', [
+            'default-color'        => '#fff',
+            'default-image'        => '',
+            'default-repeat'       => 'no-repeat',
+        ]);
+
+        add_theme_support( 'post-thumbnails' );
+
     }
 
 }
