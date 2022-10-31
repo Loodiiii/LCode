@@ -1,6 +1,6 @@
 <?php 
 /**
- * Main template file.
+ * Single page template.
  * 
  * @package LCode
  */
@@ -9,7 +9,7 @@
 ?>
 
 <div class="content">
-    <?php esc_html_e( 'Content Blog', 'lcode' ) ?>
+    <?php esc_html_e( 'Single Post', 'lcode' ) ?>
 </div>
 
 <?php 

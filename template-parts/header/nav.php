@@ -80,12 +80,5 @@ $header_menus = wp_get_nav_menu_items( $header_menu_id );
   </div>
 </nav>
 <?php
-wp_nav_menu(
-        array(
-            'theme_location' => 'lcode-header-menu',
-            'container_class' => 'my_extra_menu_class'
-        )
-);
-
 
 ?>
