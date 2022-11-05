@@ -15,6 +15,7 @@ if( ! defined( 'LCODE_DIR_URI' ) ) {
 }
 
 require_once LCODE_DIR_PATH . '/inc/helpers/autoloader.php';
+require_once LCODE_DIR_PATH . '/inc/helpers/template-tags.php';
 
 function lcode_get_theme_instance() {
     \LCode_THEME\Inc\LCode_THEME::get_instance();
