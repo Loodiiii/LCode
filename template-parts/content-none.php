@@ -36,14 +36,14 @@
             } elseif( is_search() ) {
                 ?>
 
-                <p><?php esc_html_e( 'Sorry but nothing matched your search criteria. Please try again with some different keywords', 'lcode' ); ?></p>
+                <p><?php esc_html_e( 'Sorry but nothing matched your search criteria. Please try again with some different keywords.', 'lcode' ); ?></p>
                 <?php
                 get_search_form();
 
             } else {
                 ?>
 
-                <p><?php esc_html_e( 'It seems that we cannot find what you are looking for. Perhaps search can help', 'lcode' ); ?></p>
+                <p><?php esc_html_e( 'It seems that we cannot find what you are looking for. Perhaps search can help.', 'lcode' ); ?></p>
                 <?php
                 get_search_form();
 
