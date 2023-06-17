@@ -3,7 +3,6 @@
  * Bootstraps the Theme.
  * 
  * @package LCode
- * 
  */
 
 namespace LCode_THEME\Inc;
@@ -18,6 +17,8 @@ class LCode_THEME {
 
         Assets::get_instance();
         Menus::get_instance();
+        Meta_Boxes::get_instance();
+
 
         $this->set_hooks();
 

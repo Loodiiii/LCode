@@ -33,25 +33,17 @@
 
                     // Starting the Loop
                     while( have_posts() ) : the_post();
-
-                        if( 0 === $index % $no_of_columns ) {
-                            ?>
+                        if( 0 === $index % $no_of_columns ) : ?>
                             <div class="col-lg-4 col-md-6 col-sm-12">
-                            <?php
-                        }
+                        <?php endif; ?>
 
+                        <?php 
                         get_template_part( 'template-parts/content' );
-
-                        $index++;
-                        
-                            if( 0 !== $index && 0 === $index % $no_of_columns ) {
-                            ?>
-                                </div>
-                            <?php  
-                            }
-
-                    endwhile;
-                    ?>
+                        $index++;                        
+                        if( 0 !== $index && 0 === $index % $no_of_columns ) : ?>
+                            </div>
+                        <?php endif; ?>
+                    <?php endwhile; ?>
                 </div>
             </div>
 
