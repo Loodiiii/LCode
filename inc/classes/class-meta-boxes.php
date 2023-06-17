@@ -76,7 +76,12 @@ class Meta_Boxes {
          */
 
         if( ! current_user_can( 'edit_post', $post_id ) ) {
-            echo 'a';
+            return;
+        }
+
+        if( ! isset( $_POST['hide_title_meta_box_nonce_name'] ) || 
+            ! wp_verify_nonce( $_POST['hide_title_meta_box_nonce_name'], plugin_basename(__FILE__) ) ) {
+            return;
         }
 
         if( array_key_exists( 'lcode_hide_title_field', $_POST ) ) {
